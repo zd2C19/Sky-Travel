@@ -10,6 +10,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- custom fonts -->
@@ -45,19 +46,19 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="images/slide01.jpg" alt="">
+                        <img src="images/slide01.jpg" class="img-responsive">
                     </div>
                     <div class="item">
-                        <img src="images/slide02.jpg" alt="">
+                        <img src="images/slide02.jpg" class="img-responsive">
                     </div>
                     <div class="item">
-                        <img src="images/slide03.jpg" alt="">
+                        <img src="images/slide03.jpg" class="img-responsive">
                     </div>
                     <div class="item">
-                        <img src="images/slide04.jpg" alt="">
+                        <img src="images/slide04.jpg" class="img-responsive">
                     </div>
                     <div class="item">
-                        <img src="images/slide05.jpg" alt="">
+                        <img src="images/slide05.jpg" class="img-responsive">
                     </div>
                 </div>
                 <!-- Controls -->
@@ -216,31 +217,43 @@
     <!-- contact Section -->
     <section id="contact">
         <div class="container text-center">
-            <div class="col-md-12">
-                <h2 class="section-heading">CONTACT US</h2>
-                <h3 class="section-subheading text-muted">お気軽にお問い合わせください</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading">CONTACT US</h2>
+                    <h3 class="section-subheading text-muted">お気軽にお問い合わせください</h3>
+                </div>
+              </div>
                 <!-- form 挿入 -->
                 <form>
-                    <div class="form-group">
-                      <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="お名前 *" required>
-                        <input type="email" class="form-control" placeholder="E メール *" required>
-                        <input type="tel" class="form-control" placeholder=",電話番号 *" required>
-                      </div>
-                      </div>
-                    <div class="form-group">
-                      <div class="col-md-6">
-                        <<textarea name="お問い合わせ内容" placeholder="お問い合わせ内容 *"></textarea>
-                      </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="お名前 *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="E メール *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder=",電話番号 *" required>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                      <div class="col-md-12">
-                    <button type="submit" class="btn-xl">送信</button>
-                  </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <<textarea name="お問い合わせ内容" placeholder="お問い合わせ内容 *"></textarea>
+                            </div>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="submit" class="btn-xl">送信</button>
+                            </div>
+                        </div>
+                </div>
                 </form>
             </div>
-        </div>
     </section>
     <!-- map -->
     <section id="map" class="map">
